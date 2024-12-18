@@ -1,0 +1,15 @@
+azure-functions
+azure-storage-blob
+Pillow
+moondream
+requests
+
+werkzeug
+flask
+flask-sqlalchemy
+flask-wtf
+redis
+celery
+requests
+sqlalchemy
+wtforms

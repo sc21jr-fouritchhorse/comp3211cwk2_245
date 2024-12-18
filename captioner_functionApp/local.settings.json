@@ -1,0 +1,29 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "python",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "InstrumentationKey=26e57a54-1291-4a36-80c7-969fbcbd41e0;IngestionEndpoint=https://uksouth-1.in.applicationinsights.azure.com/;LiveEndpoint=https://uksouth.livediagnostics.monitor.azure.com/;ApplicationId=af7e9100-1707-423f-a382-341acbd7dda6",
+    "AZURE_CONTAINER_NAME": "comp3211-image-container",
+    "AZURE_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=comp3211image;AccountKey=NwfpNOFOYC9eviRorP5mF0IeNFIjWoDx5cPojCRRXdQ9OaVaGXMUwojPTOoVewLsoXURf7xkNhSu+AStMe1GiQ==;EndpointSuffix=core.windows.net",
+    "AzureWebJobsStorage": "DefaultEndpointsProtocol=https;AccountName=comp3211cwk24b5e2;AccountKey=0rAzN1jCDb11fnYDsVJIn+bQbtfZXhBG8HucFbYVbPyuMiC1kBPxCvoVn/yj7wXOrN/2/kLkRnw9+ASty7o/jw==;EndpointSuffix=core.windows.net",
+    "DEPLOYMENT_STORAGE_CONNECTION_STRING": "DefaultEndpointsProtocol=https;AccountName=comp3211cwk24b5e2;AccountKey=0rAzN1jCDb11fnYDsVJIn+bQbtfZXhBG8HucFbYVbPyuMiC1kBPxCvoVn/yj7wXOrN/2/kLkRnw9+ASty7o/jw==;EndpointSuffix=core.windows.net"
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

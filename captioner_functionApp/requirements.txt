@@ -1,0 +1,6 @@
+#Ignore this if running locally, this is only here for deployment purposes
+azure-functions
+azure-storage-blob
+Pillow
+moondream
+requests

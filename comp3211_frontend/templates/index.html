@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Accessible Thumbnailer</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 800px; margin: 0 auto; padding: 20px; }
+        table { width: 100%; border-collapse: collapse; margin-top: 20px; }
+        table, th, td { border: 1px solid #ddd; padding: 8px; }
+        img { max-width: 200px; max-height: 200px; }
+        .form-group { margin-bottom: 15px; }
+    </style>
+</head>
+<body>
+    <h1>Accessible Thumbnailer</h1>
+    
+    <form method="POST" enctype="multipart/form-data">
+        {{ form.csrf_token }}
+        <div class="form-group">
+            {{ form.name.label }} {{ form.name(class="form-control") }}
+        </div>
+        <div class="form-group">
+            {{ form.image.label }} {{ form.image(class="form-control") }}
+        </div>
+        <button type="submit">Upload</button>
+    </form>
+
+    <h2>Uploaded Images</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Thumbnail</th>
+                <th>Caption</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for upload in image_uploads %}
+            <tr>
+                <td>{{ upload.name }}</td>
+                <td>
+                    {% if upload.thumbnail_url %}
+                        <img src="{{ upload.thumbnail_url }}" alt="Thumbnail">
+                    {% else %}
+                        Processing...
+                    {% endif %}
+                </td>
+                <td>{{ upload.caption or 'Generating...' }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>
